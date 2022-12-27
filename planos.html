@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caravan - Local</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Entre na sua conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="InputEmail1">Email</label>
+              <input type="email" class="form-control" id="InputEmail1" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+              <label for="InputPassword1">Senha</label>
+              <input type="password" class="form-control" id="InputPassword1" placeholder="*******">
+            </div>
+            <button type="submit" class="btn btn-primary">Entrar na conta</button>
+            <small class="form-text text-muted"> Esqueceu a senha? <a href="#"> Clique aqui.</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- fecha modal  -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/caravan.svg" alt="caravan">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" type=" button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"">Locais</a>
+          <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="local.html">California</a>
+            <a class="dropdown-item" href="local.html">Paris</a>
+            <a class="dropdown-item" href="local.html">Dublin</a>
+    </div>
+    </li>
+    <li class=" nav-item">
+      <a class="nav-link active " href="planos.html">Planos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contato.html">Contatos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="modal" data-target="#modalLogin" href="">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a>
+    </li>
+    </ul>
+    </div>
+  </nav>
+
+
+
+  <section class="container">
+    <div class="text-center my-5">
+      <span class="h5 d-block">SEU PLANO, SUA VIAGEM</span>
+      <h2 class="display-4 text-primary">Escolha o plano</h2>
+    </div>
+    <div class="row">
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Gold</h2>
+          <ul class="list-unstyled lista-plano">
+            <li> → 30 dias de viagem</li>
+            <li> → 3 destinos diferentes</li>
+            <li> → Tudo pago pela empresa</li>
+            <li> → Ingressos para festas</li>
+          </ul>
+          <form>
+            <div class="form-group ">
+              <select class="form-control  bg-light" id="inputCidades">
+                <option>Selecione a cidade</option>
+                <option>California</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$5.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md mb-5">
+        <div class="bg-light rounded p-4 box-shadow">
+          <h2>Platinum <span class="badge badge-success">Novo</span></h2>
+          <ul class="list-unstyled lista-plano">
+            <li> → 60 dias de viagem</li>
+            <li> → 6 destinos diferentes</li>
+            <li> → Tudo pago pela empresa</li>
+            <li> → Ingressos para festas</li>
+          </ul>
+          <form>
+            <div class="form-group ">
+              <select class="form-control  bg-light" id="inputCidades">
+                <option>Selecione a cidade</option>
+                <option>California</option>
+                <option>Paris</option>
+                <option>Dublin</option>
+              </select>
+            </div>
+          </form>
+          <div class="row mt-4 align-items-center">
+            <div class="col">
+              <a href="inscricao.html" class="btn btn-primary btn-lg btn-block">Comprar plano</a>
+            </div>
+            <div class="col">
+              <span class="h4">R$5.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-dark text-white mt-5">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h4 class="h6">PÁGINAS</h4>
+          <ul class="list-unstyled">
+            <li> <a href="planos.html">Planos</a></li>
+            <li> <a href="contato.html">Contato</a></li>
+            <li> <a href="inscricao.html">Inscreva-se</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="h6">LOCAIS</h4>
+          <ul class="list-unstyled">
+            <li> <a href="local.html">California</a></li>
+            <li> <a href="local.html">Paris</a></li>
+            <li> <a href="local.html">Dublin</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 ">
+          <h4 class="h6">DADOS DE CONTATO</h4>
+          <ul class="list-unstyled">
+            <li> caravan@caravan.com.br</li>
+            <li> 21 999999-9999</li>
+            <li>De Seg. a Sex. das 8h as 18h</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h4 class="h6">REDES SOCIAIS</h4>
+          <ul class="list-unstyled">
+            <li class="btn btn-outline-secondary btn-block btn-sm mb-2" style="max-width: 140px;">FACEBOOK</li>
+            <li class="btn btn-outline-secondary btn-block btn-sm mb-2" style="max-width: 140px;">TWITTER</li>
+            <li class="btn btn-outline-secondary btn-block btn-sm mb-2" style="max-width: 140px;">YOUTUBE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary text-center py-3">
+      <p class="mb-0">Caravan © 2017. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

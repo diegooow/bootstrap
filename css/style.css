@@ -18,3 +18,10 @@ body {
 .pergunta {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+.lista-plano li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.lista-plano li:last-child {
+  border-bottom: none;
+}
